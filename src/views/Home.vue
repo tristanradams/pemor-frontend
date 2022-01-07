@@ -2,6 +2,11 @@
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
     <HelloWorld msg="Welcome to Your Vue.js App" />
+    <div>
+      <b-alert show dismissible>
+        Dismissible Alert! Click the close button over there <b>&rArr;</b>
+      </b-alert>
+    </div>
   </div>
 </template>
 
