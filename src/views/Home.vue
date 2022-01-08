@@ -1,13 +1,13 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-    <h1>Hello {{ username }}</h1>
-    <div>
-      <b-alert show dismissible>
-        Dismissible Alert! Click the close button over there <b>&rArr;</b>
-      </b-alert>
-    </div>
+    <b-container class="justify-content-center">
+      <b-row>
+        <b-col>
+          <HelloWorld msg="Welcome to Pemor" />
+          <h1>Hello {{ username }}</h1>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 

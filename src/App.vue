@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link>
-      |
-      <router-link to="/login">Login</router-link>
-    </div>
+    <b-nav>
+      <b-nav-item to="/" active>Home</b-nav-item>
+      <b-nav-item to="/login">Login</b-nav-item>
+    </b-nav>
     <router-view />
   </div>
 </template>
@@ -15,19 +14,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-}
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
+  height: 750px;
+  background-image: url("https://www.wallpaperbetter.com/wallpaper/707/699/675/eyes-cars-animals-pets-high-quality-picture-1080P-wallpaper-middle-size.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 </style>
