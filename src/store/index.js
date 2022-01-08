@@ -7,10 +7,14 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     username: "",
+    isAuthenticated: false,
   },
   mutations: {
     successfulLogin(state, username) {
       state.username = username;
+    },
+    setIsAuthenticated(state, boolean) {
+      state.isAuthenticated = boolean;
     },
   },
   actions: {},

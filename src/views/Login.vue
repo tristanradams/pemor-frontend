@@ -59,8 +59,9 @@ export default {
         .then((data) => {
           if (data === 200) {
             this.$store.commit("successfulLogin", this.form.username);
+            this.$store.commit("setIsAuthenticated", true);
             alert("Success!");
-            this.$router.replace("/");
+            this.$router.push("/");
           } else {
             alert("failure! code:" + data);
           }

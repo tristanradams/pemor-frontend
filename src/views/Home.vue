@@ -5,6 +5,7 @@
         <b-col>
           <HelloWorld msg="Welcome to Pemor" />
           <h1>Hello {{ username }}</h1>
+          <h2>isAuthenticated: {{ isAuthenticated }}</h2>
         </b-col>
       </b-row>
     </b-container>
@@ -23,6 +24,7 @@ export default {
   data() {
     return {
       username: this.$store.state.username,
+      isAuthenticated: this.$store.state.isAuthenticated,
     };
   },
 };

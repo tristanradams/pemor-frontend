@@ -1,8 +1,19 @@
 <template>
   <div id="app">
     <b-nav>
-      <b-nav-item to="/" active>Home</b-nav-item>
-      <b-nav-item to="/login">Login</b-nav-item>
+      <b-nav-item to="/" active>
+        <b-button pill>Home</b-button>
+      </b-nav-item>
+      <b-nav-item
+        to="/my-account"
+        v-if="isAuthenticated"
+        v-bind="isAuthenticated"
+      >
+        <b-button pill>My Account</b-button>
+      </b-nav-item>
+      <b-nav-item to="/login" v-else>
+        <b-button pill>Login</b-button>
+      </b-nav-item>
     </b-nav>
     <router-view />
   </div>
@@ -22,3 +33,14 @@
   background-size: cover;
 }
 </style>
+
+<script>
+export default {
+  name: "App",
+  data() {
+    return {
+      isAuthenticated: this.$store.state.isAuthenticated,
+    };
+  },
+};
+</script>
